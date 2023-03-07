@@ -40,9 +40,6 @@ def get_all_holes_length_radius(holes_json):
 
 length_radius_list = get_all_holes_length_radius(holes_data)
 
-# Below is the Output of the get_all_holes_length_radius function
-# data = [[[0, 0]], [[0, 0]], [[17.4624996185, 8.4074001312], [1.5874996185, 9.6773998966]]]
-# above return value is passed to the below has_unreachable_hole_warning and has_unreacheable_hole_error function.
 
 def has_unreachable_hole_warning(data):
     global_data = []
@@ -91,5 +88,4 @@ has_unreacheable_hole_error_data = has_unreacheable_hole_error(length_radius_lis
 
 print(df.head(5000).to_csv(r"C:\Users\Admin\Desktop\Dataset\transformedcsvdata.csv",header=True,))
 
-# Please Cross-Verify the return value of the function unreachable_hole_warning_data and has_unreacheable_hole_error_data with the original value.
 
