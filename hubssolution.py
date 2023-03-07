@@ -44,7 +44,7 @@ length_radius_list = get_all_holes_length_radius(holes_data)
 def has_unreachable_hole_warning(data):
     global_data = []
     check_unreachable_hole_warning = iter(data)
-    while True:
+    while True
         try:
             value = next(check_unreachable_hole_warning)
             local_data = [None] * len(value)
